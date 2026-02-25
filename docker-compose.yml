@@ -81,7 +81,6 @@ services:
     volumes:
       - ./zeek-live:/var/log/zeek:ro
       - ./suricata:/var/log/suricata:ro
-      # ADD THIS LINE: This gives Logstash its instructions
       - ./logstash-cyberai.conf:/etc/logstash/conf.d/11-cyberai.conf
     restart: unless-stopped
 
