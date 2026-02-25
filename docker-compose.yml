@@ -1,0 +1,102 @@
+services:
+  # --- MISP INFRASTRUCTURE ---
+  misp-db:
+    image: mariadb:10.5
+    container_name: misp-db
+    networks:
+      - cyberai-net
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=misp
+      - MYSQL_USER=misp
+      - MYSQL_PASSWORD=misp
+    restart: unless-stopped
+
+  misp-redis:
+    image: redis:latest
+    container_name: misp-redis
+    networks:
+      - cyberai-net
+    restart: unless-stopped
+
+  # --- MAIN SECURITY TOOLS ---
+  misp:
+    image: ghcr.io/nukib/misp:latest
+    container_name: misp
+    depends_on:
+      - misp-db
+      - misp-redis
+    networks:
+      - cyberai-net
+    ports:
+      - "80:80"
+      - "8080:8080"
+    environment:
+      - "MISP_BASEURL=http://localhost"
+      - "MISP_UUID=4c4d34f7-8628-410e-b41d-712061020e0c"
+      - "MISP_ORG=Eduskills-Lab"
+      - "MISP_EMAIL=admin@admin.test"
+      - "MYSQL_HOST=misp-db"
+      - "MYSQL_LOGIN=misp"
+      - "MYSQL_PASSWORD=misp"
+      - "MYSQL_DATABASE=misp"
+      - "REDIS_HOST=misp-redis"
+    restart: unless-stopped
+
+  zeek:
+    image: zeek/zeek:latest
+    container_name: zeek
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    volumes:
+      - ./zeek-live:/usr/local/zeek/spool/zeek
+    command: /bin/sh -c "zeekctl deploy && tail -f /dev/null"
+    restart: unless-stopped
+
+  suricata:
+    image: jasonish/suricata:latest
+    container_name: suricata
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+    volumes:
+      - ./suricata:/var/log/suricata
+    command: -i eth0
+    restart: unless-stopped
+
+  elk:
+    image: sebp/elk:latest
+    container_name: elk
+    networks:
+      - cyberai-net
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - ./zeek-live:/var/log/zeek:ro
+      - ./suricata:/var/log/suricata:ro
+      # ADD THIS LINE: This gives Logstash its instructions
+      - ./logstash-cyberai.conf:/etc/logstash/conf.d/11-cyberai.conf
+    restart: unless-stopped
+
+  jupyter:
+    image: jupyter/scipy-notebook:latest
+    container_name: jupyter-notebook
+    networks:
+      - cyberai-net
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+      - ./zeek-live:/home/jovyan/work/zeek-live
+    restart: unless-stopped
+
+networks:
+  cyberai-net:
+    driver: bridge

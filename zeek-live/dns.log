@@ -1,0 +1,33 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2026-01-28-13-00-11
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected	opcode	opcode_name
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool	count	string
+1769605200.696788	Cud5eHS5feqUM3d6h	192.168.159.130	53152	192.168.159.2	53	udp	38745	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605200.719520	CyNrvv42h8z2I0Znl2	192.168.159.130	45912	192.168.159.2	53	udp	34315	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605200.900462	CQzVsf2koiOxQWTzKh	192.168.159.130	57234	192.168.159.2	53	udp	52038	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605201.106380	CtNX1ITQD0zlRaRNj	192.168.159.130	37163	192.168.159.2	53	udp	2789	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605201.207517	CfFUqt1DWAViw9rZRe	192.168.159.130	50667	192.168.159.2	53	udp	43813	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605201.619650	CWnQiS22oIS4djjtWg	192.168.159.130	53768	192.168.159.2	53	udp	24090	-	255.113.95.34.in-addr.arpa	-	-	-	-	0	NOERROR	F	F	F	T	0	255.113.95.34.bc.googleusercontent.com	5.000000	F	0	query
+1769605201.822395	CacpV33nz1uR8qS08h	192.168.159.130	51428	192.168.159.2	53	udp	13885	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605202.538723	CYJzVq3G7HXhygjxg3	192.168.159.130	56994	192.168.159.2	53	udp	26302	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605202.846493	CFS4XL9lCAXmdtLAg	192.168.159.130	51423	192.168.159.2	53	udp	60513	-	93.243.107.34.in-addr.arpa	-	-	-	-	0	NOERROR	F	F	F	T	0	93.243.107.34.bc.googleusercontent.com	5.000000	F	0	query
+1769605203.050186	Cn9r201hat3zVlviOc	192.168.159.130	58105	192.168.159.2	53	udp	2703	-	110.26.217.172.in-addr.arpa	-	-	-	-	0	NOERROR	F	F	F	T	0	kix05s01-in-f110.1e100.net,kix05s01-in-f14.1e100.net,tzdelb-bj-in-f14.1e100.net	5.000000,5.000000,5.000000	F	0	query
+1769605203.255277	CBTLBly09QEEGxsqf	192.168.159.130	57597	192.168.159.2	53	udp	25737	-	238.24.217.172.in-addr.arpa	-	-	-	-	0	NOERROR	F	F	F	T	0	del03s05-in-f14.1e100.net,hkg12s34-in-f14.1e100.net,kul06s17-in-f238.1e100.net,tzdela-bb-in-f14.1e100.net	5.000000,5.000000,5.000000,5.000000	F	0	query
+1769605203.357776	C5xW0x4LKL3b46miha	192.168.159.130	34164	192.168.159.2	53	udp	19948	-	203.137.36.34.in-addr.arpa	-	-	-	-	0	NOERROR	F	F	F	T	0	203.137.36.34.bc.googleusercontent.com	5.000000	F	0	query
+1769605204.279172	Ch5PXW1RXoynth4Xc	192.168.159.130	57458	192.168.159.2	53	udp	6276	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1769605204.381610	CtTs6G4b13dCpmh11d	192.168.159.130	46573	192.168.159.2	53	udp	51824	-	191.144.160.34.in-addr.arpa	-	-	-	-	0	NOERROR	F	F	F	T	0	191.144.160.34.bc.googleusercontent.com	5.000000	F	0	query
+1769605218.717664	CN3nSK2x67hq7VGBO4	192.168.159.130	38369	192.168.159.2	53	udp	4319	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1769605221.859251	CS3vjH12c7GDVCHw8j	192.168.159.130	49662	192.168.159.2	53	udp	22767	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1769605222.405068	C7xXct4ciGBxfJqd1k	192.168.159.130	46073	192.168.159.2	53	udp	31880	-	artifacts.security.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	infra-cdn.elastic.co,34.120.127.130	5.000000,5.000000	F	0	query
+1769605251.016554	CCkOEM1sUGZjCHentc	192.168.159.130	44661	192.168.159.2	53	udp	11821	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1769605518.761497	Cl2ULi4UZuR4jcEEyd	192.168.159.130	35277	192.168.159.2	53	udp	51643	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1769605626.784810	CbfFSQ1h3u6sTeNNE1	192.168.159.130	38687	192.168.159.2	53	udp	40474	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	142.251.43.202	5.000000	F	0	query
+1769605646.693670	CYGg3elmig6OBMGU8	192.168.159.130	56885	192.168.159.2	53	udp	40296	-	ads.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mc.prod.ads.prod.webservices.mozgcp.net,34.36.137.203	5.000000,5.000000	F	0	query
+1769605646.693674	CYGg3elmig6OBMGU8	192.168.159.130	56885	192.168.159.2	53	udp	51050	-	ads.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mc.prod.ads.prod.webservices.mozgcp.net	5.000000	F	0	query
+1769605647.098119	CG2fKJ1wBYdvyGcjBj	192.168.159.130	49622	192.168.159.2	53	udp	26244	-	push.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	34.107.243.93	5.000000	F	0	query
+1769605647.098123	CG2fKJ1wBYdvyGcjBj	192.168.159.130	49622	192.168.159.2	53	udp	10882	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	F	0	query
+1769605647.907924	Co9mI61ZNLHioBw9lc	192.168.159.130	34379	192.168.159.2	53	udp	22427	-	firefox.settings.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query

@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	stats
+#open	2026-01-28-13-02-12
+#fields	ts	peer	mem	pkts_proc	bytes_recv	pkts_dropped	pkts_link	pkt_lag	pkts_filtered	events_proc	events_queued	active_tcp_conns	active_udp_conns	active_icmp_conns	tcp_conns	udp_conns	icmp_conns	timers	active_timers	files	active_files	dns_requests	active_dns_requests	reassem_tcp_size	reassem_file_size	reassem_frag_size	reassem_unknown_size
+#types	time	string	count	count	count	count	count	interval	count	count	count	count	count	count	count	count	count	count	count	count	count	count	count	count	count	count	count
+1769605331.675892	zeek	283	179	30604	0	179	0.000000	-	612	614	1	2	0	9	28	0	2101	66	0	0	0	0	48	0	0	0
+1769605631.676865	zeek	283	109	23623	0	109	0.000000	-	436	434	2	4	0	5	13	0	2043	73	0	0	0	0	48	0	0	0
