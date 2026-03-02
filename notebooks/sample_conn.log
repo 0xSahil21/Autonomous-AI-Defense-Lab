@@ -1,0 +1,6 @@
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	duration	orig_bytes	resp_bytes	conn_state	service	flag	orig_pkts	resp_pkts	tunnel	orig_ip_tos	resp_ip_tos
+1678886400.123456	C1aB2c	192.168.1.100	54321	10.0.0.5	80	tcp	15.5	1024	5120	SF	http	SFT_SH	10	25	-	0x00	0x00
+1678886405.678901	D2eF3g	192.168.1.100	54322	10.0.0.5	443	tcp	22.1	2048	8192	SF	https	SFT_SH	15	30	-	0x00	0x00
+1678886410.112233	E3fG4h	192.168.1.101	54323	10.0.0.6	8080	tcp	5.0	512	2048	SF	http	SFT_SH	5	10	-	0x00	0x00
+1678886415.445566	F4gH5i	192.168.1.100	54324	10.0.0.7	53	udp	0.1	64	128	SH	dns	SH	1	1	-	0x00	0x00
+1678886420.778899	G5hI6j	192.168.1.102	54325	10.0.0.8	22	tcp	30.2	4096	16384	SF	ssh	SFT_SH	20	40	-	0x00	0x00
