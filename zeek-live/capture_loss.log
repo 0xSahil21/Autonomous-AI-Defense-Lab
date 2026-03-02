@@ -7,3 +7,4 @@
 #fields	ts	ts_delta	peer	gaps	acks	percent_lost
 #types	time	interval	string	count	count	double
 1772446341.578187	900.000609	zeek	0	0	0.0
+1772447241.578561	900.000374	zeek	0	0	0.0
