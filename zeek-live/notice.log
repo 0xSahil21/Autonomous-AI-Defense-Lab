@@ -8,3 +8,4 @@
 #types	time	string	addr	port	addr	port	string	string	string	enum	enum	string	string	addr	addr	port	count	string	set[enum]	set[string]	interval	string	string	string	double	double
 1772557578.450521	-	-	-	-	-	-	-	-	-	CaptureLoss::Too_Little_Traffic	Only observed 0 TCP ACKs and was expecting at least 1.	-	-	-	-	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
 1772558478.451037	-	-	-	-	-	-	-	-	-	CaptureLoss::Too_Little_Traffic	Only observed 0 TCP ACKs and was expecting at least 1.	-	-	-	-	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+1772559378.451595	-	-	-	-	-	-	-	-	-	CaptureLoss::Too_Little_Traffic	Only observed 0 TCP ACKs and was expecting at least 1.	-	-	-	-	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
