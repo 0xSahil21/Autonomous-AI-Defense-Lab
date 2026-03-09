@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	x509
+#open	2026-03-09-12-21-05
+#fields	ts	fingerprint	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len	host_cert	client_cert
+#types	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count	bool	bool
+1773058865.860742	501c476379078a484736c64ab8c0fda446ec02e558b3d56637f21477a5727f28	3	055FFACF83F483D1D976CE2A9A9EDEE14C22	CN=firefox.settings.services.mozilla.com	CN=R12,O=Let's Encrypt,C=US	1770823409.000000	1778599408.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	firefox-settings.mozilla-backup.org,firefox.settings.services.mozilla.com	-	-	-	F	-	T	F
+1773058865.865335	742aa6129e2ccec906c4b2fa603477dfac88791cac832c5f5e8bd401b491b215	3	0665DE26296F5DC01768B80DE369910E984F	CN=content-signature-2.cdn.mozilla.net	CN=R12,O=Let's Encrypt,C=US	1768578839.000000	1776354838.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	content-signature-2.cdn.mozilla.net	-	-	-	F	-	T	F

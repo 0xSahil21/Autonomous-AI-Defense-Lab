@@ -1,0 +1,9 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ocsp
+#open	2026-03-09-12-21-06
+#fields	ts	id	hashAlgorithm	issuerNameHash	issuerKeyHash	serialNumber	certStatus	revoketime	revokereason	thisUpdate	nextUpdate
+#types	time	string	string	string	string	string	string	time	string	time	time
+1773058866.377707	FokYPp19aMabY2XcE3	sha1	5342D4848BC117F9B6144D777CFB23310F7B35CD	DE1B1EED7915D43E3724C321BBEC34396D42B230	F6409144D62BCF4A0A7CF8D1FF684D59	good	-	-	1772972096.000000	1773573295.000000

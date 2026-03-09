@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2026-03-09-12-21-06
+#fields	ts	fuid	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
+#types	time	string	string	addr	port	addr	port	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
+1773058866.377707	FokYPp19aMabY2XcE3	C3EYEa2OiR4kqJdfqe	192.168.159.130	34934	216.58.203.3	80	HTTP	0	SHA1,OCSP_REPLY,MD5,SHA256	application/ocsp-response	-	0.000000	F	F	472	472	0	0	F	-	67c7e4fe899a44485b55d5fbafea28a6	58be834032dfd654bddb33e23cbff625509c93f4	c1b83273e8885c1c083ea56a13332cfe02abca0e8898c2e3565dc43b34bb5823	-	-	-
+1773058868.340809	FZHXf53Q7u4oEzOcIk	Ce5WiA2Fb0krrWkDyj	192.168.159.130	55068	34.107.221.82	80	HTTP	0	SHA1,MD5,SHA256	-	-	0.000000	F	F	8	8	0	0	F	-	ae780585f49b94ce1444eb7d28906123	7d5ca8c0c03e883c56c4eb1ef6f6bb9bccad4d86	81b2bd4ea98c8db66554fbc8d7637a1a69a130f331feb732b75caab4c4868fd5	-	-	-

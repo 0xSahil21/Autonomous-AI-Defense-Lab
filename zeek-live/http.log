@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	http
+#open	2026-03-09-12-21-06
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types
+#types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]
+1773058866.377707	C3EYEa2OiR4kqJdfqe	192.168.159.130	34934	216.58.203.3	80	1	-	-	-	-	1.1	-	-	0	472	200	OK	-	-	(empty)	-	-	-	-	-	-	FokYPp19aMabY2XcE3	-	application/ocsp-response
+1773058868.340809	Ce5WiA2Fb0krrWkDyj	192.168.159.130	55068	34.107.221.82	80	1	-	-	-	-	1.1	-	-	0	8	200	OK	-	-	(empty)	-	-	-	-	-	-	FZHXf53Q7u4oEzOcIk	-	-

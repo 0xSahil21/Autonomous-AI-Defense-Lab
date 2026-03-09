@@ -1,0 +1,89 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2026-03-09-11-09-03
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected	opcode	opcode_name
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool	count	string
+1773054533.788033	CcAl6O2BSGyWEt4jFh	192.168.159.130	39312	192.168.159.2	53	udp	32369	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1773054534.629402	CJRtht1i9W35YvLowl	192.168.159.130	36245	192.168.159.2	53	udp	29142	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F	0	query
+1773054546.599526	CPlzoXMUmyXGcFEK9	192.168.159.130	48881	192.168.159.2	53	udp	36991	-	ads.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773054546.599536	CPlzoXMUmyXGcFEK9	192.168.159.130	48881	192.168.159.2	53	udp	24698	-	ads.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,2a04:4e42:31::347	5.000000,5.000000	F	0	query
+1773054546.599539	CCGMLE3qBbr4smpng7	192.168.159.130	49625	192.168.159.2	53	udp	41129	-	content-signature-2.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	34.160.144.191	5.000000	F	0	query
+1773054546.599542	CCGMLE3qBbr4smpng7	192.168.159.130	49625	192.168.159.2	53	udp	4242	-	content-signature-2.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	2600:1901:0:92a9::	5.000000	F	0	query
+1773054546.599535	CDv1kS1Qmd6WWsCufk	192.168.159.130	60686	192.168.159.2	53	udp	18006	-	firefox.settings.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773054546.599538	CDv1kS1Qmd6WWsCufk	192.168.159.130	60686	192.168.159.2	53	udp	62555	-	firefox.settings.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,2a04:4e42:31::347	5.000000,5.000000	F	0	query
+1773054546.640644	CcpRgk3QJrCfCe0wnd	192.168.159.130	46952	192.168.159.2	53	udp	62049	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	2404:6800:4009:801::200a	5.000000	F	0	query
+1773054546.617838	CcpRgk3QJrCfCe0wnd	192.168.159.130	46952	192.168.159.2	53	udp	27749	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	142.250.195.10	5.000000	F	0	query
+1773054548.780322	CobHsM1syOvjyQ9fx2	192.168.159.130	46133	192.168.159.2	53	udp	16062	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	F	0	query
+1773054548.780306	CobHsM1syOvjyQ9fx2	192.168.159.130	46133	192.168.159.2	53	udp	34234	-	push.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	34.107.243.93	5.000000	F	0	query
+1773054548.780330	CP9VW02HrfXm04xdHe	192.168.159.130	35355	192.168.159.2	53	udp	11600	-	o.pki.goog	-	-	-	-	0	NOERROR	F	F	F	T	0	pki-goog.l.google.com,2404:6800:4009:80f::2003	5.000000,5.000000	F	0	query
+1773054548.780324	CP9VW02HrfXm04xdHe	192.168.159.130	35355	192.168.159.2	53	udp	61515	-	o.pki.goog	-	-	-	-	0	NOERROR	F	F	F	T	0	pki-goog.l.google.com,216.58.203.35	5.000000,5.000000	F	0	query
+1773054555.032844	Cz95Wg2Q7ftUOMO3Sd	192.168.159.130	37742	192.168.159.2	53	udp	8663	-	example.org	-	-	-	-	0	NOERROR	F	F	F	T	0	104.18.2.24,104.18.3.24	5.000000,5.000000	F	0	query
+1773054555.032835	C2tTar4fya48zNdDok	192.168.159.130	55762	192.168.159.2	53	udp	32639	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	F	0	query
+1773054555.032849	C4UaAk3aEu9ZYA0057	192.168.159.130	56908	192.168.159.2	53	udp	55423	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	F	0	query
+1773054555.032850	C4UaAk3aEu9ZYA0057	192.168.159.130	56908	192.168.159.2	53	udp	52859	-	ipv4only.arpa	-	-	-	-	0	NOERROR	F	F	F	T	0	192.0.0.170,192.0.0.171	5.000000,5.000000	F	0	query
+1773054555.032851	Cic93f3MkuWoyUSaxh	192.168.159.130	51677	192.168.159.2	53	udp	56478	-	example.org	-	-	-	-	0	NOERROR	F	F	F	T	0	2606:4700:83b3:ba92:3942:6dc:3a67:c62a	5.000000	F	0	query
+1773054555.032847	Cic93f3MkuWoyUSaxh	192.168.159.130	51677	192.168.159.2	53	udp	63387	-	example.org	-	-	-	-	0	NOERROR	F	F	F	T	0	104.18.2.24,104.18.3.24	5.000000,5.000000	F	0	query
+1773054558.998477	CBesYs4ZJmDFqsLu29	192.168.159.130	40783	192.168.159.2	53	udp	27337	-	detectportal.firefox.com	-	-	-	-	0	NOERROR	F	F	F	T	0	detectportal.prod.mozaws.net,prod.detectportal.prod.cloudops.mozgcp.net,34.107.221.82	5.000000,5.000000,5.000000	F	0	query
+1773054558.998438	CRSNUH1TtaPb3B04x6	192.168.159.130	55959	192.168.159.2	53	udp	50491	-	detectportal.firefox.com	-	-	-	-	0	NOERROR	F	F	F	T	0	detectportal.prod.mozaws.net,prod.detectportal.prod.cloudops.mozgcp.net,34.107.221.82	5.000000,5.000000,5.000000	F	0	query
+1773054558.998480	CRSNUH1TtaPb3B04x6	192.168.159.130	55959	192.168.159.2	53	udp	12863	-	detectportal.firefox.com	-	-	-	-	0	NOERROR	F	F	F	T	0	detectportal.prod.mozaws.net,prod.detectportal.prod.cloudops.mozgcp.net,2600:1901:0:38d7::	5.000000,5.000000,5.000000	F	0	query
+1773054558.998481	C6SVoO3qwsbYJMbIw9	192.168.159.130	51755	192.168.159.2	53	udp	10209	-	firefox-settings-attachments.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net	5.000000	F	0	query
+1773054558.998484	C1SEGBM1zq6Td9w5h	192.168.159.130	37348	192.168.159.2	53	udp	7256	-	firefox-settings-attachments.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773054558.998482	C1SEGBM1zq6Td9w5h	192.168.159.130	37348	192.168.159.2	53	udp	51797	-	firefox-settings-attachments.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,2a04:4e42:31::347	5.000000,5.000000	F	0	query
+1773054567.398547	CRQtVk2XZC2SxUKRb3	192.168.159.130	43430	192.168.159.2	53	udp	17511	-	normandy.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	normandy.tombstone.experimenter.prod.webservices.mozgcp.net	5.000000	F	0	query
+1773054567.398537	CRQtVk2XZC2SxUKRb3	192.168.159.130	43430	192.168.159.2	53	udp	21880	-	normandy.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	normandy.tombstone.experimenter.prod.webservices.mozgcp.net,34.49.51.44	5.000000,5.000000	F	0	query
+1773054567.480720	CfXu8q36urKR3IqqWk	192.168.159.130	54633	192.168.159.2	53	udp	1260	-	services.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	2a04:4e42::347,2a04:4e42:600::347,2a04:4e42:200::347,2a04:4e42:400::347	5.000000,5.000000,5.000000,5.000000	F	0	query
+1773054567.480713	CfXu8q36urKR3IqqWk	192.168.159.130	54633	192.168.159.2	53	udp	1257	-	services.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	151.101.193.91,151.101.129.91,151.101.1.91,151.101.65.91	5.000000,5.000000,5.000000,5.000000	F	0	query
+1773054567.893298	CegF211W1pBUHIWzL	192.168.159.130	42337	192.168.159.2	53	udp	29038	-	versioncheck-bg.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	2600:1901:0:d29a::	5.000000	F	0	query
+1773054567.893286	CegF211W1pBUHIWzL	192.168.159.130	42337	192.168.159.2	53	udp	63330	-	versioncheck-bg.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	34.160.90.233	5.000000	F	0	query
+1773054567.893295	CD1lSd3TbWg99OMPw5	192.168.159.130	43913	192.168.159.2	53	udp	28333	-	classify-client.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773054567.902287	CD1lSd3TbWg99OMPw5	192.168.159.130	43913	192.168.159.2	53	udp	3153	-	classify-client.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,2a04:4e42:31::347	5.000000,5.000000	F	0	query
+1773054567.911186	CYfuFd3CsjddVLlSa7	192.168.159.130	33187	192.168.159.2	53	udp	14812	-	aus5.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773054567.911194	CYfuFd3CsjddVLlSa7	192.168.159.130	33187	192.168.159.2	53	udp	36816	-	aus5.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,2a04:4e42:31::347	5.000000,5.000000	F	0	query
+1773054803.875382	C2UNSI2lF7zRlDnwfk	192.168.159.130	50537	192.168.159.2	53	udp	55596	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	2a04:4e42:400::223,2a04:4e42::223,2a04:4e42:600::223,2a04:4e42:200::223	5.000000,5.000000,5.000000,5.000000	F	0	query
+1773054803.875374	CQ4SlY2v4Q9iwy21Ga	192.168.159.130	59768	192.168.159.2	53	udp	10539	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	151.101.192.223,151.101.0.223,151.101.128.223,151.101.64.223	5.000000,5.000000,5.000000,5.000000	F	0	query
+1773054804.886404	CdHE7N2bJUXwN8S8Jf	192.168.159.130	52605	192.168.159.2	53	udp	51743	-	files.pythonhosted.org	-	-	-	-	0	NOERROR	F	F	F	T	0	dualstack.python.map.fastly.net,2a04:4e42:fe7::223,2a04:4e42:fea::223	5.000000,5.000000,5.000000	F	0	query
+1773054804.886398	CFCAYa4naRXCYWv531	192.168.159.130	38168	192.168.159.2	53	udp	35096	-	files.pythonhosted.org	-	-	-	-	0	NOERROR	F	F	F	T	0	dualstack.python.map.fastly.net,167.82.56.223,167.82.60.223	5.000000,5.000000,5.000000	F	0	query
+1773054840.958809	CChWL16UNgrNEZLug	192.168.159.130	58690	192.168.159.2	53	udp	9342	-	ads.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773055392.815995	C5l8Cf4HadAy5LO3t2	192.168.159.130	44218	192.168.159.2	53	udp	5244	-	epr.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	infra-cdn.elastic.co,34.120.127.130	5.000000,5.000000	F	0	query
+1773055401.239784	C8l4LB2OTSyM36q22g	192.168.159.130	34332	192.168.159.2	53	udp	58367	-	artifacts.security.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	infra-cdn.elastic.co,34.120.127.130	5.000000,5.000000	F	0	query
+1773055402.254677	CTuV4u2oHD1zBuhALk	192.168.159.130	39507	192.168.159.2	53	udp	27427	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055409.192464	C47zLE3diSqRqlOzyi	192.168.159.130	32860	192.168.159.2	53	udp	54723	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055409.227713	C0cA2y2BpElG2GChz3	192.168.159.130	38591	192.168.159.2	53	udp	11620	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055409.940292	CyDN8m4U7p3Rs2vId1	192.168.159.130	48391	192.168.159.2	53	udp	48121	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055409.940301	CEKlK83zYU87ngvkoe	192.168.159.130	52657	192.168.159.2	53	udp	28040	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055409.991247	CibsKV2mB4QGfHv2yh	192.168.159.130	56473	192.168.159.2	53	udp	45376	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055409.991251	CuZVia4t7tFsxzTs6	192.168.159.130	57051	192.168.159.2	53	udp	47884	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055410.065965	CBcv9q1Cp9KFxC04pc	192.168.159.130	37847	192.168.159.2	53	udp	47120	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055410.685872	CHvk0f1AqPgz5sVdfc	192.168.159.130	40386	192.168.159.2	53	udp	58879	-	artifacts.security.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	infra-cdn.elastic.co,34.120.127.130	5.000000,5.000000	F	0	query
+1773055410.686249	Cdvb2U2tUPZV2P1SQl	192.168.159.130	57774	192.168.159.2	53	udp	62318	-	artifacts.security.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	infra-cdn.elastic.co,34.120.127.130	5.000000,5.000000	F	0	query
+1773055425.021954	CRpD7xZz2yAgeLtuc	192.168.159.130	38338	192.168.159.2	53	udp	38595	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055434.970390	CnXxoA1FePGBko7Mzj	192.168.159.130	58446	192.168.159.2	53	udp	10286	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055441.440028	ClwcUF6rnjx6pCgI	192.168.159.130	43091	192.168.159.2	53	udp	7932	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055455.120480	CZAY1z3OptvEjtIzD4	192.168.159.130	40184	192.168.159.2	53	udp	18862	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055465.143819	CI119QioJopyHrUIa	192.168.159.130	41278	192.168.159.2	53	udp	10905	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055475.001049	C5hOXm1T9Sn4HsKPp5	192.168.159.130	59657	192.168.159.2	53	udp	3914	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055690.117091	C1og6D1xCdfluZ73Qa	192.168.159.130	38789	192.168.159.2	53	udp	41757	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055692.157552	CZnmcz3SDLkOEkD6N7	192.168.159.130	59206	192.168.159.2	53	udp	27333	-	epr.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	infra-cdn.elastic.co,34.120.127.130	5.000000,5.000000	F	0	query
+1773055708.779012	CzDQ4b1AqigaoeS2C8	192.168.159.130	56826	192.168.159.2	53	udp	33089	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773055754.887881	CXuMt62hSKv50OIWib	192.168.159.130	51417	192.168.159.2	53	udp	40520	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	F	0	query
+1773055754.900801	CXuMt62hSKv50OIWib	192.168.159.130	51417	192.168.159.2	53	udp	47434	-	push.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	34.107.243.93	5.000000	F	0	query
+1773055756.855104	CnHhyByHCX809trc	192.168.159.130	37979	192.168.159.2	53	udp	17585	-	firefox.settings.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773055757.774681	C5E3sM1QwVNuAGpzja	192.168.159.130	34692	192.168.159.2	53	udp	15250	-	content-signature-2.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	34.160.144.191	5.000000	F	0	query
+1773055760.382502	CWtSqX1wjY8FJ0L426	192.168.159.130	55840	192.168.159.2	53	udp	15560	-	firefox-settings-attachments.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773055760.365974	CWtSqX1wjY8FJ0L426	192.168.159.130	55840	192.168.159.2	53	udp	57300	-	firefox-settings-attachments.cdn.mozilla.net	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,2a04:4e42:31::347	5.000000,5.000000	F	0	query
+1773056008.970229	C81OIF2YN8HzIJL6E2	192.168.159.130	53871	192.168.159.2	53	udp	24397	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773056031.331976	CbKWn7UtwnEA8Dc34	192.168.159.130	46571	192.168.159.2	53	udp	14525	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	2a04:4e42:400::223,2a04:4e42::223,2a04:4e42:600::223,2a04:4e42:200::223	5.000000,5.000000,5.000000,5.000000	F	0	query
+1773056031.338842	CvZxJSeoYiJAbjd1b	192.168.159.130	54629	192.168.159.2	53	udp	60604	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	151.101.192.223,151.101.0.223,151.101.128.223,151.101.64.223	5.000000,5.000000,5.000000,5.000000	F	0	query
+1773056166.045393	CaJwWw1AplQisarWh4	192.168.159.130	60395	192.168.159.2	53	udp	65028	-	ads.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773056308.898926	Cq9HLQ3FiTwmX5nzA3	192.168.159.130	54901	192.168.159.2	53	udp	57834	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773056341.500547	CVeEQ514bqm7KKgaq5	192.168.159.130	49976	192.168.159.2	53	udp	46372	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.174.234	5.000000	F	0	query
+1773056609.014317	CdyGF1lSgbhSBo9cg	192.168.159.130	34895	192.168.159.2	53	udp	25482	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773056908.980483	Cyosjz42Hqpwtd9Ek1	192.168.159.130	40009	192.168.159.2	53	udp	41698	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+1773056962.265269	CsiM64441jcvsFqcyj	192.168.159.130	41106	192.168.159.2	53	udp	50131	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	F	0	query
+1773056962.265261	CsiM64441jcvsFqcyj	192.168.159.130	41106	192.168.159.2	53	udp	64942	-	push.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	34.107.243.93	5.000000	F	0	query
+1773056964.210923	CqlhH54kXfiNTZ49I6	192.168.159.130	39772	192.168.159.2	53	udp	37974	-	firefox.settings.services.mozilla.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mozilla.map.fastly.net,151.101.209.91	5.000000,5.000000	F	0	query
+1773057208.970331	CjvBNX1lTntCassAZi	192.168.159.130	60414	192.168.159.2	53	udp	50914	-	telemetry.elastic.co	-	-	-	-	0	NOERROR	F	F	F	T	0	34.95.113.255	5.000000	F	0	query
+#close	2026-03-09-12-10-39
