@@ -1,0 +1,6 @@
+# Ignore heavy Suricata/IDS logs
+*.log
+*.json
+# Ignore large model files if you don't want them on GitHub
+*.keras
+*.h5
