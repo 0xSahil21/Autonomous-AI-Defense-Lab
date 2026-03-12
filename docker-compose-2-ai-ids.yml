@@ -1,0 +1,52 @@
+#adding and mapping suricata with ai integrated ids
+
+services:
+  # ... (misp-db, misp-redis, and misp services remain the same) ...
+
+  # --- MAIN SECURITY TOOLS ---
+  # (zeek remains the same)
+
+  suricata:
+    image: jasonish/suricata:latest
+    container_name: suricata
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+    volumes:
+      - ./suricata:/var/log/suricata
+    command: -i eth0
+    restart: unless-stopped
+
+  # --- NEW AI INFERENCE SERVICE ---
+  ai-ids-monitor:
+    image: python:3.9-slim
+    container_name: ai-ids-monitor
+    depends_on:
+      - suricata
+      - elk
+    networks:
+      - cyberai-net
+    volumes:
+      - ./suricata:/app/logs:ro  # Read-only access to Suricata logs
+      - ./notebooks:/app/model:ro # Access to your exported .joblib file
+      - ./scripts:/app/scripts    # Folder where your monitor.py lives
+    command: >
+      sh -c "pip install pandas joblib scikit-learn && 
+             python /app/scripts/monitor.py"
+    restart: unless-stopped
+
+  elk:
+    image: sebp/elk:latest
+    container_name: elk
+    # ... (rest of elk config remains the same) ...
+
+  jupyter:
+    image: jupyter/scipy-notebook:latest
+    container_name: jupyter-notebook
+    # ... (rest of jupyter config remains the same) ...
+
+networks:
+  cyberai-net:
+    driver: bridge
